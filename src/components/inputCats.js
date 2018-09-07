@@ -6,14 +6,15 @@ const inputCats = [
     name: 'Hadi',
     age: 1,
     enjoys: "Catnip toys.",
-    image: "Hadi.jpeg"
+    dogFriendly: true
+
   },
   {
     id: 2,
     name: 'Henry',
     age: 4,
     enjoys: "Sitting by the window, bird-watching.",
-    image: ""
+    dogFriendly: false
   },
   {
     id: 3,

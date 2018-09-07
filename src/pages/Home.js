@@ -1,30 +1,36 @@
 import React, { Component } from 'react'
 import Cats from "./Cats.js";
 import Carousel from 'nuka-carousel';
+import cats from '../components/inputCats';
+import petfinder from '../api/petfinder3.js'
+// import DogFriendly from '../components/dogFriendly.js'
 import { Card, Header, Body, Title, Text, Badge
 } from 'react-bootstrap'
 
 
 
 class Home extends Component {
+
+
   render() {
+      let pets = petfinder.petfinder.pets.pet
 
     return (
       <Carousel slidesToShow={3} cellAlign="center" cellSpacing={30} slideWidth={0.75}>
 
       <div className="card-body">
-      <h1>Peter</h1>
-      <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42515955/1/?bust=1534809794"/>
-      <span class="badge badge-pill badge-success">Ready for Adoption</span>
-      <p className="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+      <h1>{pets[0].name["$t"]}</h1>
+      <img src={pets[0].media.photos.photo[""]}/>
+      <span class="badge badge-pill badge-success"></span>
+      <p className="card-text">{pets[0].description["$t"]}</p>
       </div>
 
 
 
       <div className="card-body">
-      <h1>Henry</h1>
+      <h1>reugkhbdfmns,</h1>
       <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42446360/1/?bust=1535798677&width=1439" />
-      <span class="badge badge-pill badge-success">Ready for Adoption</span>
+
       <p className="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
       </div>
 
