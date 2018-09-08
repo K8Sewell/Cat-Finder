@@ -6,7 +6,8 @@ const inputCats = [
     name: 'Hadi',
     age: 1,
     enjoys: "Catnip toys.",
-    dogFriendly: true
+    dogFriendly: true,
+    image: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42446360/1/?bust=1535798677&width=1439"
 
   },
   {
